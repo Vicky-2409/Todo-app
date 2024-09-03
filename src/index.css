@@ -1,0 +1,117 @@
+/* General app layout */
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Title styling */
+h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Input bar and button styling */
+.input-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-bar input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  width: 250px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-bar input[type="text"]:focus {
+  border-color: #4caf50;
+}
+
+.input-bar button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.input-bar button:hover {
+  background-color: #45a049;
+}
+
+/* Message styling */
+p {
+  color: red;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* Card styling */
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-container p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+  flex-grow: 1; /* Allow text to take available space */
+}
+
+/* Button styling for each card */
+.card-container button {
+  padding: 8px 12px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  min-width: 80px; /* Set a minimum width to keep button sizes consistent */
+  text-align: center; /* Center text in button */
+}
+
+/* Edit button specific styling */
+.card-container button.edit-button {
+  background-color: #ff9800;
+}
+
+.card-container button.edit-button:hover {
+  background-color: #fb8c00;
+}
+
+/* Delete button specific styling */
+.card-container button.delete-button {
+  background-color: #f44336;
+}
+
+.card-container button.delete-button:hover {
+  background-color: #e53935;
+}
